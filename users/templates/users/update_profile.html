@@ -19,7 +19,7 @@
                     {% if user.profile.picture %}
                         <img src="{{ user.profile.picture.url }}" class="rounded-circle" height="50" />
                     {% else%}
-                        <img src="{% static 'img/default-profile.png' %}" class="rounded-circle" height="50" />
+                        <img src="{% static 'img/profile.png' %}" class="rounded-circle" height="50" />
                     {% endif %}
 
                     <div class="media-body">
@@ -33,7 +33,7 @@
 
                 <hr><br>
 
-                <div class="form-group">
+                <div class="form-group" style="color: darkblue;">
                     <label>Website</label>
                     <input
                         class="form-control 
@@ -51,6 +51,7 @@
                     	{% endfor %}
                     </div>
                 </div>
+                <br>
 
                 <div class="form-group">
                     <label>Biography</label>
@@ -62,6 +63,7 @@
                     	name="biography">{% if form.errors %}{{form.biography.value}}{% else %}{{user.profile.biography }}{% endif %}</textarea>
                 	<div class="invalid-feedback">{% for error in form.biography.errors %}{{error}}{% endfor %}</div>
                 </div>
+                <br>
 
                 <div class="form-group">
                     <label>Phone number</label>
@@ -81,6 +83,7 @@
                     	{% endfor %}
                     </div>
                 </div>
+                <br>
 
                 <button type="submit" class="btn btn-primary btn-block mt-5">Update info</button>
             </form>

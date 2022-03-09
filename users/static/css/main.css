@@ -1,5 +1,5 @@
 html, body {
-    background: #fafafa;
+    background: grey;
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -12,12 +12,12 @@ html, body {
 }
 
 #main-navbar {
-    background: #fff;
+    background:blueviolet;
     border-bottom: 1px solid rgba(0,0,0,.0975);
 }
 
 .post-container {
-    background: #fff;
+    background:papayawhip;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
 }
