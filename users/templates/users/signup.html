@@ -20,7 +20,7 @@
   			</button>
 		</div>
 	{% endif %}
-	<form method="POST" action="{% url 'users:signup' %}">
+	<form method="POST" action="{% url 'users:signup' %}" style="background-color: cadetblue;">
 		{% csrf_token %}
 		{% for input in form %}
 			<div class="form-group">
